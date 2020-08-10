@@ -9,12 +9,30 @@ class CartItem extends React.Component {
         this.state = {
             title: 'i phone',
             price: '99999',
-            qty: '1'
+            qty: 1
         }
         //this.increaseQuantity = this.increaseQuantity.bind(this);
     }
+    decreseQuantity = () => {
+        this.setState({
+            qty: this.state.qty - 1
+        })
+    }
     increaseQuantity = () => {
-        console.log('this.state',this.state);
+        // console.log('this.state',this.state);
+
+
+        //set state form 1
+        this.setState({
+            qty: this.state.qty + 1
+        });
+
+        //set state form 2 if prevState is available
+        // this.setState((prevState)=>{
+        //     return{
+        //         qty: prevState.qty+1
+        //     }
+        // });
     }
     render() {
 
@@ -42,6 +60,7 @@ class CartItem extends React.Component {
                         alt="decrease" 
                         className="action-icons" 
                         src="https://as2.ftcdn.net/jpg/03/16/36/03/500_F_316360373_uWcj5rZxsUbmoAogMfow8EZhUOn7FTM0.jpg"
+                        onClick={this.decreseQuantity}
                          />
 
                         <img 
