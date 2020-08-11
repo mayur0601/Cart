@@ -6,11 +6,7 @@ class CartItem extends React.Component {
     constructor() {
         super();
 
-        this.state = {
-            title: 'i phone',
-            price: '99999',
-            qty: 1
-        }
+       
         //this.increaseQuantity = this.increaseQuantity.bind(this);
     }
     decreseQuantity = () => {
@@ -42,7 +38,8 @@ class CartItem extends React.Component {
     }
     render() {
 
-        const { title, price, qty } = this.state;
+        console.log('this.props', this.props);
+         const { price, title, qty } = this.props.product;
         return (
             <div className="cart-item">
                 <div className="left-block">
