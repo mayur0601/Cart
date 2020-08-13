@@ -1,3 +1,6 @@
+![snapshot](https://raw.githubusercontent.com/mayur0601/Cart/master/cart4.png)
+![snapshot](https://raw.githubusercontent.com/mayur0601/Cart/master/cart5.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
